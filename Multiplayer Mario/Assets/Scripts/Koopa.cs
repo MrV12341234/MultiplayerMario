@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Goomba : MonoBehaviour
+public class Koopa : MonoBehaviour
 {
-    public Sprite flatSprite;
+    public Sprite shellSprite;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,7 +13,7 @@ public class Goomba : MonoBehaviour
             // dot task to ensure kill only when mario hits goomba going down
             if (collision.transform.DotTest(transform, Vector2.down))
             {
-                Flatten();
+                EnterShell(); // Koopa enters stationary shell
             }
             else
             {
@@ -22,13 +22,11 @@ public class Goomba : MonoBehaviour
         }
     }
 
-    private void Flatten() // function when enemy is killed
+    private void EnterShell() // function when enemy is killed
     {
-        GetComponent<Collider2D>().enabled = false;
         GetComponent<EntityMovement>().enabled = false;
         GetComponent<AnimatedSprite>().enabled = false;
-        GetComponent<SpriteRenderer>().sprite = flatSprite;
-        Destroy(gameObject, 0.5f); // wait 5 seconds before destroying so player has .5 seconds to see flattened goomba
+        GetComponent<SpriteRenderer>().sprite = shellSprite;
+        
     }
-    
 }

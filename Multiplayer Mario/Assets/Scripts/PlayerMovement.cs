@@ -98,6 +98,14 @@ private void Awake()
     // OnCollisionEnter2D is a unity function that says 'do this when player has collided with something'
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            if (transform.DotTest(collision.transform, Vector2.down)) // if player (called transform) hits enemy object going down
+            {
+                velocity.y = jumpForce / 2f; // apply half your jump force
+                jumping = true;
+            }
+        }
         if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
         {
             // Stop vertical movement if mario bonks his head
