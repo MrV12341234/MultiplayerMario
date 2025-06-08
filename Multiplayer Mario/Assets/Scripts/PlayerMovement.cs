@@ -2,7 +2,7 @@ using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private new Camera camera;
     private new Rigidbody2D rigidbody;
@@ -18,6 +18,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public bool grounded { get; private set; }
     public bool jumping { get; private set; }
+    public bool running => Mathf.Abs(velocity.x) > 0.25f || Mathf.Abs(inputAxis) > 0.25f;
+    // below defines sliding. if your pressing button and your velocity is opposite, you are slide.
+    public bool sliding => (inputAxis > 0f && velocity.x < 0f) || (inputAxis < 0f && velocity.x > 0f);
 
 private void Awake()
     {
