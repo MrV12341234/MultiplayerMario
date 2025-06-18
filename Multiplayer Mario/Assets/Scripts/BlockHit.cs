@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BlockHit : MonoBehaviour
 {
+    public GameObject item;
     public Sprite emptyBlock; // leave empty in inspector if you want block to become invisible after breaking
     public int maxHits = -1; // for how many times a block is able to be hit (-1 means it can be hit over & over w/out breaking b/c the Hit() function only destroys if 0)
     
@@ -23,11 +24,19 @@ public class BlockHit : MonoBehaviour
     private void Hit()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.enabled = true; // revels block if its hidden
         maxHits--;
         
         if (maxHits == 0)
         {
             spriteRenderer.sprite = emptyBlock;
+        }
+
+        if (item != null)
+        {
+            Debug.Log($"Spawning {item.name} at {transform.position}");
+
+            Instantiate(item, transform.position, Quaternion.identity); //spawns an item if object is attached in inspector
         }
 
         StartCoroutine(Animate());

@@ -426,6 +426,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3310636961031492672, guid: c8d84d9f1be05724482e6216ba603143, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 4562173473853670741, guid: c8d84d9f1be05724482e6216ba603143, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (Magic Mushroom)
@@ -578,6 +582,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
@@ -2538,6 +2546,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
       objectReference: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}
@@ -4148,6 +4160,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3310636961031492672, guid: c8d84d9f1be05724482e6216ba603143, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 4562173473853670741, guid: c8d84d9f1be05724482e6216ba603143, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (Magic Mushroom) (1)
@@ -5393,6 +5409,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
       objectReference: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}
@@ -5644,6 +5664,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8106066268518229954, guid: dd5cdacc4eacda54382a6bcc04e7f359, type: 3}
   m_PrefabInstance: {fileID: 1136936621}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1145184326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1964429145}
+    m_Modifications:
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: emptyBlock
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}
+    - target: {fileID: 4562173473853670741, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_Name
+      value: MysteryBlock (Coin) (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562173473853670741, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927392516736143383, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
 --- !u!4 &1153640397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7488814368117282670, guid: ed2bb4fe4bab1f24c8aea69581041cea, type: 3}
@@ -5779,6 +5876,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
@@ -6542,6 +6643,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3310636961031492672, guid: c8d84d9f1be05724482e6216ba603143, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 4562173473853670741, guid: c8d84d9f1be05724482e6216ba603143, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (Magic Mushroom) (2)
@@ -6958,6 +7063,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
@@ -8781,6 +8890,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
       objectReference: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}
@@ -9948,6 +10061,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bacf56df508a7458a9ff67da717a0d, type: 3}
+--- !u!4 &1962491296 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1241323119869353560, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+  m_PrefabInstance: {fileID: 1145184326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1964429144
 GameObject:
   m_ObjectHideFlags: 0
@@ -9978,6 +10096,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 980084947}
+  - {fileID: 1962491296}
   - {fileID: 1602115650}
   - {fileID: 465261482}
   - {fileID: 1297347287}
@@ -10045,6 +10164,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
@@ -10704,6 +10827,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
       objectReference: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}
@@ -10773,6 +10900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
@@ -10990,6 +11121,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
+    - target: {fileID: 3201962282949744573, guid: 9252df67cec090641b2e9e63dccc9fd5, type: 3}
       propertyPath: emptyBlock
       value: 
       objectReference: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}
@@ -11072,9 +11207,17 @@ PrefabInstance:
       value: MysteryBlock (Hidden)
       objectReference: {fileID: 0}
     - target: {fileID: 4671869573877382666, guid: e1f02f3f9addf7d419e3ff553b4b7f2e, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1354623880651897626, guid: e8fca957a2ef94244ad5b554f5256297, type: 3}
+    - target: {fileID: 4671869573877382666, guid: e1f02f3f9addf7d419e3ff553b4b7f2e, type: 3}
       propertyPath: emptyBlock
       value: 
       objectReference: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}
+    - target: {fileID: 4927392516736143383, guid: e1f02f3f9addf7d419e3ff553b4b7f2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

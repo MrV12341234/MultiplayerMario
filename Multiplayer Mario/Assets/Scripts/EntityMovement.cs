@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EntityMovement : MonoBehaviour
@@ -28,7 +29,7 @@ public class EntityMovement : MonoBehaviour
     {
         rigidbody.WakeUp();
     }
-
+    
     private void OnDisable()
     {
         rigidbody.linearVelocity = Vector2.zero;
@@ -45,7 +46,7 @@ public class EntityMovement : MonoBehaviour
         //flip direction when enemy hits something
         if (rigidbody.Raycast(direction))
         {
-            direction =-direction;
+            direction = -direction;
         }
 
         if (rigidbody.Raycast(Vector2.down))
