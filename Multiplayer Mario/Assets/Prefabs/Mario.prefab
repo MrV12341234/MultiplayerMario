@@ -377,6 +377,7 @@ MonoBehaviour:
   moveSpeed: 8
   maxJumpHeight: 5
   maxJumpTime: 1
+  friction: 4
 --- !u!114 &1618794737108267399
 MonoBehaviour:
   m_ObjectHideFlags: 0

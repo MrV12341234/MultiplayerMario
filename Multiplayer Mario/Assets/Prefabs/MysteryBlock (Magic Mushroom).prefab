@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1241323119869353560}
   - component: {fileID: 4927392516736143383}
   - component: {fileID: 8431893216610071250}
+  - component: {fileID: 3310636961031492672}
   m_Layer: 0
   m_Name: MysteryBlock (Magic Mushroom)
   m_TagString: Untagged
@@ -134,3 +135,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3310636961031492672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4562173473853670741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6941a6ea597ef4895f2a23dc8498b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHits: 1
+  emptyBlock: {fileID: 21300000, guid: 0ac141f921b554649bb187f85a24b184, type: 3}

@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     {
         // TO DO
     }
-    private void Death()
+    public void Death()
     {
         smallRenderer.enabled = false;
         bigRenderer.enabled = false;

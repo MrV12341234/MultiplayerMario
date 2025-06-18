@@ -62,7 +62,13 @@ public class Koopa : MonoBehaviour
     {
         pushed = true;
 
-        GetComponent<Rigidbody2D>().isKinematic = false;
+        // GetComponent<Rigidbody2D>().isKinematic = false;
+        // NEW
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+        }
         
         EntityMovement movement = GetComponent<EntityMovement>();
         movement.direction = direction.normalized;
@@ -78,5 +84,13 @@ public class Koopa : MonoBehaviour
         GetComponent<AnimatedSprite>().enabled = false;
         GetComponent<DeathAnimation>().enabled = true;
         Destroy(gameObject, 3f);
+    }
+    
+    private void OnBecameInvisible()
+    {
+        if (pushed)
+        {
+            Destroy(gameObject);
+        }
     }
 }
