@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7521412205265686743}
   - component: {fileID: 8499860743119378757}
   - component: {fileID: 3030089088979764422}
-  - component: {fileID: -8697450857868331108}
+  - component: {fileID: 8576083557791550682}
   - component: {fileID: -8133833527271052094}
   m_Layer: 6
   m_Name: MagicMushroom
@@ -201,7 +201,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-8697450857868331108
+--- !u!114 &8576083557791550682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

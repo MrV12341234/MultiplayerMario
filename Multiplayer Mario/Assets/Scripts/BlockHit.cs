@@ -35,7 +35,7 @@ public class BlockHit : MonoBehaviour
         if (item != null)
         {
             Debug.Log($"Spawning {item.name} at {transform.position}");
-
+            
             Instantiate(item, transform.position, Quaternion.identity); //spawns an item if object is attached in inspector
         }
 

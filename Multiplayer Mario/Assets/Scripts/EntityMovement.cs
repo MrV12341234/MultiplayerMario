@@ -12,6 +12,7 @@ public class EntityMovement : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        enabled = false;
     }
     
     // dectects when something becomes visible
