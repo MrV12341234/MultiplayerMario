@@ -13,9 +13,12 @@ public class Koopa : MonoBehaviour
         // check what Koopa collided with
         if (!shelled && collision.gameObject.CompareTag("Player") && collision.gameObject.TryGetComponent(out Player player)) // confirms its the player that collides with koopa
         {
-            
+            if (player.starpower)
+            {
+                Hit();
+            }
             // dot task to ensure kill only when mario hits goomba going down
-            if (collision.transform.DotTest(transform, Vector2.down))
+            else if (collision.transform.DotTest(transform, Vector2.down))
             {
                 EnterShell(); // Koopa enters stationary shell
             }
@@ -25,7 +28,6 @@ public class Koopa : MonoBehaviour
             }
         }
     }
-    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -39,7 +41,15 @@ public class Koopa : MonoBehaviour
             else
             {
                 Player player = other.GetComponent<Player>(); // gets a reference to the player
-                player.Hit();
+
+                if (player.starpower)
+                {
+                    Hit();
+                }
+                else
+                {
+                    player.Hit();
+                }
             }
         }
         else if (!shelled && other.gameObject.layer == LayerMask.NameToLayer("Shell"))
@@ -47,7 +57,6 @@ public class Koopa : MonoBehaviour
             Hit();
         }
     }
-
     
     private void EnterShell() // function when enemy is killed
     {

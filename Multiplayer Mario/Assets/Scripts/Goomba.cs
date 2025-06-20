@@ -10,8 +10,14 @@ public class Goomba : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.gameObject.GetComponent<Player>();
+
+            if (player.starpower) // if the player in star power call Hit(); killing goomba
+            {
+                Hit();
+            }
+            
             // dot task to ensure kill only when mario hits goomba going down
-            if (collision.transform.DotTest(transform, Vector2.down))
+           else if (collision.transform.DotTest(transform, Vector2.down))
             {
                 Flatten();
             }

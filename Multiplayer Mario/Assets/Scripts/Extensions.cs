@@ -13,11 +13,10 @@ public static class Extensions
       float radius = 0.25f;
       float distance = 0.375f;
       
-      
       RaycastHit2D hit = Physics2D.CircleCast(rigidbody.position, radius, direction.normalized, distance, layerMask);
       return hit.collider != null && hit.rigidbody != rigidbody;
-   }
 
+   }
    
    // Checks if the transform is facing another transform in a given direction.
    // For example, if you want to check if the player stomps on an enemy, you
