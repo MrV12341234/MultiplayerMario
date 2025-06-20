@@ -2004,6 +2004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1884122841}
+  height: 7
+  undergroundHeight: -9
 --- !u!4 &528024618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4466125088644697113, guid: 76bacf56df508a7458a9ff67da717a0d, type: 3}
@@ -6804,37 +6806,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1241323119869353560, guid: c8d84d9f1be05724482e6216ba603143, type: 3}
   m_PrefabInstance: {fileID: 1450615975}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1374034424
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1374034425}
-  m_Layer: 0
-  m_Name: Entrance
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1374034425
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374034424}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 150, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1642772125}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1390137514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7488814368117282670, guid: ed2bb4fe4bab1f24c8aea69581041cea, type: 3}
@@ -7870,7 +7841,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1374034425}
+  - {fileID: 2034226735}
   - {fileID: 1586091689}
   - {fileID: 815771866}
   - {fileID: 5875134449636186738}
@@ -10376,6 +10347,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1078669067}
     m_Modifications:
+    - target: {fileID: 621120071000369688, guid: f475d863abb5001448f05181cfd48f99, type: 3}
+      propertyPath: connection
+      value: 
+      objectReference: {fileID: 2034226735}
     - target: {fileID: 6237942450921485534, guid: f475d863abb5001448f05181cfd48f99, type: 3}
       propertyPath: m_Name
       value: Pipe
@@ -10427,7 +10402,7 @@ PrefabInstance:
     - target: {fileID: 5674727796144505232, guid: 65b70367d97a6a041b6b5110249c2668, type: 3}
       propertyPath: connection
       value: 
-      objectReference: {fileID: 1374034425}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10801,6 +10776,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3692086885582971169, guid: 08b7d9fc5a7fa6b4abaf009488828e03, type: 3}
   m_PrefabInstance: {fileID: 2033431511}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2034226734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034226735}
+  m_Layer: 0
+  m_Name: Entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034226735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034226734}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 150.4, y: -1.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1642772125}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2043509541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7488814368117282670, guid: ed2bb4fe4bab1f24c8aea69581041cea, type: 3}
@@ -11545,6 +11551,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1642772125}
     m_Modifications:
+    - target: {fileID: -2482129873701385325, guid: f18efc45ebc91ca40bcd89159cf35f84, type: 3}
+      propertyPath: connection
+      value: 
+      objectReference: {fileID: 1655158057}
     - target: {fileID: 2355043037470147678, guid: f18efc45ebc91ca40bcd89159cf35f84, type: 3}
       propertyPath: m_RootOrder
       value: 2
