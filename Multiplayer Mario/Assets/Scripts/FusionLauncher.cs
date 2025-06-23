@@ -8,6 +8,7 @@ using System.Collections;
 public class FusionLauncher : MonoBehaviour
 {
     public GameObject playerPrefab;
+    public Transform fixedSpawnPoint;
 
     private NetworkRunner runner;
 
@@ -28,7 +29,8 @@ public class FusionLauncher : MonoBehaviour
 
     public void SpawnPlayer(NetworkRunner runner, PlayerRef player)
     {
-        Vector3 spawnPos = new Vector3(UnityEngine.Random.Range(-5f, 5f), 1, 0);
+        //Vector3 spawnPos = fixedSpawnPoint.position; // empty object assigned in inspector
+        Vector3 spawnPos = fixedSpawnPoint != null ? fixedSpawnPoint.position : Vector3.zero;
         runner.Spawn(playerPrefab, spawnPos, Quaternion.identity, player);
     }
 }
