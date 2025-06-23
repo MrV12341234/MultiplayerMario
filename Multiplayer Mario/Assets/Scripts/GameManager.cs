@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     this.world = world;
     this.stage = stage;
     
-    SceneManager.LoadScene($"{world}-{stage}"); 
+   SceneManager.LoadScene($"{world}-{stage}"); 
   }
 
   public void NextLevel()
@@ -58,7 +58,8 @@ public class GameManager : MonoBehaviour
    // {
    //   LoadLevel(world + 1, 1);
    // }
-    LoadLevel(world, stage + 1); 
+   // LoadLevel(world, stage + 1); 
+   
   }
   // this fuction takes in a delay so right when mario dies ResetLevel() isnt ran instantly.
   public void ResetLevel(float delay)

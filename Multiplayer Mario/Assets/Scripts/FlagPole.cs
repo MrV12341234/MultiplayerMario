@@ -11,6 +11,8 @@ public class FlagPole : MonoBehaviour
     public float speed = 6f;
     public int nextWorld = 1;
     public int nextStage = 1;
+    public Transform nextLevelLocation;
+    public Camera mainCamera;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -36,9 +38,10 @@ public class FlagPole : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
         
-        //load next level. I need to change this to move player to an empty game object location (next level start within scene).
-        // i need to set next world and next stage in the inspector. So each flagpole tells which gamem object the next map is
-        GameManager.Instance.LoadLevel(nextWorld, nextStage);
+        //load next level. (from the original tutorial. I removed this and kept in the same scene)
+        // GameManager.Instance.LoadLevel(nextWorld, nextStage);
+
+        NextLevel(player);
     }
 
     // below is a loop to tell the player to continue moving towards a set destination (over and over)
@@ -52,4 +55,31 @@ public class FlagPole : MonoBehaviour
         
         subject.position = destination;
     }
+
+    public void NextLevel(Transform player)
+    {
+        if (player != null && nextLevelLocation != null)
+        {
+            // Move player to next level start
+            player.position = nextLevelLocation.position;
+
+            // Move camera if needed
+            if (mainCamera != null)
+            {
+                mainCamera.transform.position = new Vector3(
+                    nextLevelLocation.position.x,
+                    nextLevelLocation.position.y,
+                    mainCamera.transform.position.z
+                );
+            }
+            player.gameObject.SetActive(true);
+            player.GetComponent<PlayerMovement>().enabled = true;
+        }
+        else
+        {
+            Debug.LogWarning("Player or NextLevelStart not found.");
+        }
+    }
 }
+    
+
