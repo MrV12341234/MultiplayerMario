@@ -14,6 +14,6 @@ public class MainMenuUI : MonoBehaviour
     
         public void OnClickJoin()
         {
-            launcher.StartClient(ipInput.text);
+            launcher.StartClient();
         }
 }
