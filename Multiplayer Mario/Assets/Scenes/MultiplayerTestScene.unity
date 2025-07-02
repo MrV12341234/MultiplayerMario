@@ -2678,7 +2678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  height: 7
+  surfaceHeight: 7
   undergroundHeight: -9
 --- !u!4 &528024618 stripped
 Transform:
