@@ -12,7 +12,7 @@ public class FusionLauncher : MonoBehaviour
 
     private NetworkRunner runner;
 
-    private async void Start()
+    public async void StartHost()
     {
         runner = GetComponent<NetworkRunner>();
             
@@ -25,6 +25,11 @@ public class FusionLauncher : MonoBehaviour
             Scene       = SceneRef.FromIndex(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex),
             SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
         });
+    }
+
+    public async void StartClient()
+    {
+        
     }
 
     public void SpawnPlayer(NetworkRunner runner, PlayerRef player)
