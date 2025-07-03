@@ -9316,9 +9316,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
-        m_MethodName: OnClickJoin
+      - m_Target: {fileID: 1099161160}
+        m_TargetAssemblyTypeName: FusionLauncher, Assembly-CSharp
+        m_MethodName: StartClient
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9328,10 +9328,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1099161160}
-        m_TargetAssemblyTypeName: FusionLauncher, Assembly-CSharp
-        m_MethodName: StartClient
-        m_Mode: 1
+      - m_Target: {fileID: 2085357580}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14695,9 +14695,9 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2085357585}
   - {fileID: 355057583}
   - {fileID: 519420032}
+  - {fileID: 2085357585}
   - {fileID: 712853453}
   - {fileID: 885544080}
   - {fileID: 747323765}
